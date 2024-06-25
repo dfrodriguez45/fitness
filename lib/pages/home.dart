@@ -86,17 +86,33 @@ class HomePage extends StatelessWidget {
       centerTitle: true,
       leading: GestureDetector(
         onTap: () {},
-        child: const Icon(
-          Icons.arrow_back,
-          color: Colors.black,
+        child: Container(
+          margin: const EdgeInsets.all(10),
+          padding: const EdgeInsets.all(5),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+              color: const Color(0xffF7F8F8),
+              borderRadius: BorderRadius.circular(10)),
+          child: const Icon(
+            Icons.arrow_back,
+            color: Colors.black,
+          ),
         ),
       ),
       actions: [
         GestureDetector(
           onTap: () {},
-          child: const Icon(
-            Icons.more_horiz,
-            color: Colors.black,
+          child: Container(
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(5),
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+                color: const Color(0xffF7F8F8),
+                borderRadius: BorderRadius.circular(10)),
+            child: const Icon(
+              Icons.more_horiz,
+              color: Colors.black,
+            ),
           ),
         ),
       ],
